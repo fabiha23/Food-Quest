@@ -9,12 +9,13 @@
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
-  --color-primary: #bac64a;
+  --color-primary: #6f7740 ;
   --color-secondary: #D87D4A; 
   --color-base-100: #f5f7e1	; 
   --color-base-200: #e6e9cf	; 
   --color-base-300: #d6dabd	; 
   --color-accent: #3a3a3a; 
+  --color-error: #c92623; 
 }
 
 /* font */
@@ -22,6 +23,6 @@
   font-family: "Amatic SC", sans-serif;
 }
 
-.nunito {
+body{
   font-family: "Nunito", sans-serif;
 }
