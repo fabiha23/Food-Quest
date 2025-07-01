@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const RootLayout = () => {
   return (
     <div>
-      <header className="bg-base-200 sticky top-0 shadow-lg z-50">
+      <header className="bg-base-100 sticky top-0 shadow-lg shadow-base-300 z-50">
         <header className="max-w-7xl xl:mx-auto xl:px-2 lg:px-6 mx-3">
           <Navbar></Navbar>
         </header>

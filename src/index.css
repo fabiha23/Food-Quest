@@ -11,9 +11,9 @@
   default: true;
   --color-primary: #6f7740 ;
   --color-secondary: #D87D4A; 
-  --color-base-100: #f5f7e1	; 
-  --color-base-200: #e6e9cf	; 
-  --color-base-300: #d6dabd	; 
+  --color-base-100: 	#fbf6d8		; 
+  --color-base-200: 	#f7f0c6	; 
+  --color-base-300: #e8dc9f		; 
   --color-accent: #3a3a3a; 
   --color-error: #c92623; 
 }
