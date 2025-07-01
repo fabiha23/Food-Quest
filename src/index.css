@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: ["dark", "light"];
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #bac64a;
+  --color-secondary: #D87D4A; 
+  --color-base-100: #f5f7e1	; 
+  --color-base-200: #e6e9cf	; 
+  --color-base-300: #d6dabd	; 
+  --color-accent: #3a3a3a; 
+}
+
+/* font */
+.amatic{
+  font-family: "Amatic SC", sans-serif;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+}
