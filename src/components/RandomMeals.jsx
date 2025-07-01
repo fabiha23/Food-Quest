@@ -44,7 +44,7 @@ const RandomMeals = () => {
 
         {loading && (
           <div className="flex justify-center mt-8">
-            <span className="loading loading-spinner loading-xl text-brown-700"></span>
+            <span className="loading loading-spinner loading-xl text-error"></span>
           </div>
         )}
 
