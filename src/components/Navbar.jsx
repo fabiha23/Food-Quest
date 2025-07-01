@@ -87,7 +87,7 @@ const Navbar = () => {
 
         {/* Mobile Nav */}
         <ul
-          className={`fixed top-0 left-0 w-2/3 md:w-1/2 lg:w-1/3 h-screen bg-white backdrop-blur-xl p-10 space-y-7 text-xl font-semibold text-gray-600 transform transition-transform duration-500 ${
+          className={`fixed top-0 left-0 w-2/3 md:w-1/2 lg:w-1/3 h-screen bg-base-300 backdrop-blur-xl p-10 space-y-7 text-xl font-semibold text-accent transform transition-transform duration-500 ${
             open ? "translate-x-0" : "-translate-x-full"
           } xl:hidden`}
         >

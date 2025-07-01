@@ -1,20 +1,29 @@
-import React from "react";
-import { LuClipboardList } from "react-icons/lu";
-import { IoTimeOutline } from "react-icons/io5";
-import { BiWorld } from "react-icons/bi";
+import React, { useState } from "react";
 import { Link } from "react-router";
-import { FaGlobeAsia } from "react-icons/fa";
+import { FaBookmark, FaGlobeAsia, FaRegBookmark } from "react-icons/fa";
 import { PiForkKnife } from "react-icons/pi";
 
-const MealCard = ({ meal }) => {
+const MealCard = ({ meal, handleBookmark, bookmarks }) => {
+  const isBookmarked = bookmarks?.find((m) => m?.idMeal === meal?.idMeal);
+
   return (
     <div className="card bg-base-100 shadow-md hover:shadow-lg transition-all duration-300 shadow-base-300 h-full flex flex-col relative">
-      <figure>
+      <figure className="relative">
         <img
           className="h-70 w-full object-cover rounded-t-lg"
           src={meal?.strMealThumb}
           alt={meal?.strMeal}
         />
+        <div
+          onClick={() => handleBookmark(meal)}
+          className="bg-base-100 absolute top-2 left-2 rounded-full p-2 cursor-pointer"
+        >
+          {isBookmarked ? (
+            <FaBookmark size={22} color="#c92623" />
+          ) : (
+            <FaRegBookmark size={22} color="#c92623" />
+          )}
+        </div>
       </figure>
 
       <div className="p-3 px-4 flex-grow">
