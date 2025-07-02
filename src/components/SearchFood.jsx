@@ -14,7 +14,7 @@ import {
 
 const SearchFood = () => {
   const dispatch = useDispatch();
-  const { meals, loading, searchText, bookmarks, error } = useSelector(
+  const { meals,  loading, searchText, bookmarks, error } = useSelector(
     (state) => state.meals
   );
 
