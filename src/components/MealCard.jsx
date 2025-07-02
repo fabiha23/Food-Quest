@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Link } from "react-router";
 import { FaBookmark, FaGlobeAsia, FaRegBookmark } from "react-icons/fa";
 import { PiForkKnife } from "react-icons/pi";
@@ -26,7 +25,7 @@ const MealCard = ({ meal, handleBookmark, bookmarks }) => {
         </div>
       </figure>
 
-      <div className="p-3 px-4 flex-grow">
+      <div className="p-3 px-4">
         <div className="flex justify-between flex-wrap gap-2 font-semibold">
           <p className="flex items-center gap-1">
             <PiForkKnife />
@@ -37,7 +36,7 @@ const MealCard = ({ meal, handleBookmark, bookmarks }) => {
             {meal?.strArea}
           </p>
         </div>
-        <h2 className="card-title text-2xl font-bold text-accent mt-3">
+        <h2 className="card-title  text-2xl font-bold text-accent mt-3">
           {meal?.strMeal}
         </h2>
         <Link to={`/meal/${meal.idMeal}`}>

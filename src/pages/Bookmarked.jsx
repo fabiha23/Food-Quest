@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from "react";
 import { MdBookmarkAdded } from "react-icons/md";
 import MealCard from "../components/MealCard";
+import { useSelector } from "react-redux";
 
 const Bookmarked = () => {
-  const [bookmarks, setBookmarks] = useState(
-    () => JSON.parse(localStorage.getItem("bookmarks")) || []
-  );
-
-  useEffect(() => {
-    const storedBookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
-    setBookmarks(storedBookmarks);
-  }, []);
+    const {bookmarks}= useSelector((state)=>state.meals)
 
   return (
     <div className="py-14 px-4 max-w-6xl mx-auto">
